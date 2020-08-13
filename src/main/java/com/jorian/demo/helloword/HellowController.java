@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @date: 2019/11/25 17:08
  * @description: this is  description for the class
  */
-@RequestMapping("/hello")
+@RequestMapping("/")
 @RestController
 public class HellowController {
 
-    @RequestMapping("/{name}")
-    public String sayHello(@PathVariable String name){
-        return "hello"+ name;
+    public String sayHello(){
+        return "hello 2 b !";
     }
 
 }
